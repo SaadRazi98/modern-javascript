@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_0___default()().format());\n\nconsole.log('hello i am in js')\n\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_0___default()().format('dddd'));\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_0___default()().format(\"MMM Do YY\"));\n\n\n\n//# sourceURL=webpack://modern-javascript/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);\n\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_0___default()().format());\nconsole.log('hello i am in js');\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_0___default()().format('dddd'));\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_0___default()().format(\"MMM Do YY\"));\n\n// var datetime = moment().startOf(\"day\")\n\n// Lexical this\nvar bob = {\n  _name: \"Bob\",\n  _friends: [\"James\"],\n  printFriends: function printFriends() {\n    var _this = this;\n    this._friends.forEach(function (f) {\n      return console.log(_this._name + \" knows \" + f);\n    });\n  }\n};\nconsole.log(bob);\n\n//# sourceURL=webpack://modern-javascript/./index.js?");
 
 /***/ }),
 
